@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        body{
+            background: linear-gradient(90deg, #000 0%, #434343 100%);
+        }
+
+        .btn{
+            width: 100vh;
+        }
+
+        @media (max-width: 375px) {
+            #resultado{
+                margin-left: 60px;
+            }
+
+            #resultadoDos{
+                margin-left: 60px;
+            }
+
+        }
+
+        @media (max-width: 320px) {
+            #resultado{
+                margin-left: 30px;
+            }
+
+            #resultadoDos{
+                margin-left: 30px;
+            }
+
+        }       
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="text-align: center; color: aliceblue;">Personajes de  Rick and Morty</h1>
+        <div id="resultado" class="row mt-5"></div>
+    </div>
+
+    <div class="d-flex justify-content-center mb-2">
+        <button id="boton" type="button" class="btn btn-dark">Cargar Mas</button>
+    </div>
+
+    <div class="container">
+        <div id="resultadoDos" class="row mt-5"></div>
+    </div>
+
+
+    <script src="consumirApi.js"></script>
+</body>
+</html>
